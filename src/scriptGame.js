@@ -37,6 +37,7 @@ var gameOverSound = new Audio("Assets/Sounds/Game over.mp3");
 
 //Sonido de fondo
 var backgSound = new Audio("Assets/Sounds/Backg Sound.mp3");
+backgSound.loop = true;
 backgSound.volume = 0.8;
 backgSound.play();
 
