@@ -11,6 +11,12 @@ html {
   justify-content: center;
   align-items: center;
   position: relative;
+  opacity: 1;
+  transition: opacity 0.6s ease;
+  }
+
+  body.fade-out {
+   opacity: 0;
   }
   
   #particles-js {
