@@ -304,6 +304,6 @@ function hit(player_1, enemy) {
         player_1.clearTint();
     }, 1000);
     hurt.play();
-    playerHealth -= 20;
+    playerHealth = Math.max(0, playerHealth - 20);
     healthText.setText("salud :" + playerHealth);
 };
