@@ -4,14 +4,13 @@ html {
   }
   
   body {
+  min-height: 100vh;
   margin: 0;
-  margin-top: 7%;
-  margin-bottom: 7%;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  text-align: center;
+  align-items: center;
+  position: relative;
   }
   
   #particles-js {
@@ -25,8 +24,10 @@ html {
 
     button {
       position: relative;
-      z-index: 2;
-      transform: translate(105%, 600%);
+      z-index: 1;
+      left: 58%;
+      width: min(25%, 25vw);
+      height: auto;
       animation: growButton 4s;
       padding: 1%;
       padding-top: 0.5%;
@@ -34,34 +35,33 @@ html {
       background-color: #b19b20;
       border: 2px solid #705f00;
       color: #4d2000;
-      font-size: 20px;
       text-transform: uppercase;
       box-shadow: 2px 2px 5px #050505;
       cursor: pointer;
       transition: transform 0.3s ease;
       text-decoration: none;
+      font-size: 1.5vw;
     }
     button:hover {
-      background-color: #6d5f12; 
+      background-color: #6d5f12;
     }
 
   h3 {
     color: rgb(255, 255, 255);
     position: relative;
-    z-index: 2;
-    transform: translate(40%, 600%);
-    box-sizing: border-box;
-    word-wrap: break-word;
-    margin-top: 0;
-  }
-  
-  #warriorT {
-    position: absolute;
     z-index: 1;
-    width: 40%;
-    height: auto;
-    top: 50%;
+    top: 10%;
     left: 50%;
-    transform: translate(-50%, -50%);
-    object-fit: cover;
+  }
+
+  #warrior-img {
+    width: 100%;
+    z-index: 0;
+    height: auto;
+    display: inline-block;
+  }
+
+  #warrior-container {
+    position: absolute;
+    width: min(40%, 40vw);
   }

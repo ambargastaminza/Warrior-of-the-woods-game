@@ -1,0 +1,6 @@
+  h3 {
+    font-size: 1.4vw;
+  }
+  h3:first-of-type{
+    margin-top: -55%;
+  }
